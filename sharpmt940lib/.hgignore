@@ -1,0 +1,21 @@
+syntax: glob
+
+*.suo
+*.exe
+*.pdb
+*.dll
+*.obj
+*.Cache
+*.nupkg
+*.user
+
+syntax: regexp
+^packages/*
+^.*/bin/.*
+^.*/obj/.*
+^.*/Help/.*
+^.*/PartCover/.*
+^.*/ProfilingSessions/.*
+^.*?/TestResults/.*
+^TestResults/.*
+^Report/.*
