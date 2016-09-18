@@ -18,7 +18,8 @@ namespace Mt940ToYnabConverter
         Maestro_Karte_Jahresgebuhr,
         Geldautomaten_Bezug,
         Postgiro,
-        FremdspesenPorto
+        FremdspesenPorto,
+        EPay_Zahlung
     }
 
     public static class TransactionTypeExtensions
@@ -57,6 +58,8 @@ namespace Mt940ToYnabConverter
                     return "Postgiro";
                 case TransactionType.FremdspesenPorto:
                     return "Fremdspesen Porto";
+                case TransactionType.EPay_Zahlung:
+                    return "E-Pay Zahlung";
                 default:
                     throw new NotImplementedException();
             };
